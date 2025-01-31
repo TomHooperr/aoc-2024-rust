@@ -3,7 +3,8 @@ use std::collections::HashMap;
 pub fn run(input: &str) {
     let mut left: Vec<u32> = Vec::new();
     let mut right: Vec<u32> = Vec::new();
-    input.lines().for_each(|str| {
+
+    for str in input.lines() {
         let row: Vec<&str> = str.split_whitespace().collect();
         if let Some(left_val) = row.get(0) {
             left.extend(left_val.parse::<u32>().ok());
@@ -11,8 +12,7 @@ pub fn run(input: &str) {
         if let Some(right_val) = row.get(1) {
             right.extend(right_val.parse::<u32>().ok());
         }
-        //println!("{}, {}", row.get(0).unwrap(), row.get(1).unwrap())
-    });
+    }
 
     left.sort();
     right.sort();

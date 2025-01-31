@@ -1,8 +1,6 @@
 use std::{env, fs};
 use std::time::Instant;
 
-mod day01;
-
 fn elapsed_since(start_time: &Instant) -> String {
     let elapsed = start_time.elapsed().as_micros();
     if elapsed >= 1_000_000 {
@@ -44,7 +42,9 @@ fn main() {
 
             // Find the associated solution function
             let day_func = match day {
-                1 => day01::run,
+                1 => aoc2024::day01::run,
+                2 => aoc2024::day02::run,
+                3 => aoc2024::day03::run,
                 _ => unreachable!()
             };
 
