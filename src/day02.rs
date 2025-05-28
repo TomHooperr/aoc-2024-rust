@@ -22,9 +22,9 @@ pub fn run(input: &str) {
         //let safe = is_safe(report);
         let safe = is_safe(report);
         
-        if safe {
-            println!("{:?}: {}", report, safe);
-        }
+        // if safe {
+        //     println!("{:?}: {}", report, safe);
+        // }
         
         safe
     }).map(|report| report.to_vec()).collect();

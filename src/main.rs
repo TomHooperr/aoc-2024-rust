@@ -45,6 +45,7 @@ fn main() {
                 1 => aoc2024::day01::run,
                 2 => aoc2024::day02::run,
                 3 => aoc2024::day03::run,
+                4 => aoc2024::day04::run,
                 _ => unreachable!()
             };
 

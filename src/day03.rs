@@ -18,7 +18,7 @@ pub fn run(input: &str) {
     let mut is_do = true;
     
     for cap in re_ins.captures_iter(&input) {
-        println!("{}", &cap[1]);
+        //println!("{}", &cap[1]);
         
         end = cap.get(0).unwrap().start();
         
